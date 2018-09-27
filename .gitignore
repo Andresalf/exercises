@@ -1,0 +1,7 @@
+.vs/
+.idea/
+.vscode/
+__pycache__/
+data_types/__pycache__/
+Python.pyproj
+Python.sln
