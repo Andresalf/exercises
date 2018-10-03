@@ -5,3 +5,4 @@ __pycache__/
 data_types/__pycache__/
 Python.pyproj
 Python.sln
+*.py[cod]

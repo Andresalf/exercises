@@ -1,5 +1,5 @@
 from nose.tools import assert_equal, assert_raises
-from second_largest import *
+from exercises.second_largest import *
 
 
 class TestBstSecondLargest(object):
