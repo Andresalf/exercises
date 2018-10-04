@@ -1,4 +1,6 @@
 import sys
 import os
 
-sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+these_modules_path = os.path.abspath(os.path.dirname(__file__))
+if these_modules_path not in sys.path:
+    sys.path.append(these_modules_path)

@@ -32,6 +32,17 @@ class TestBstSecondLargest(object):
         node15 = bst.insert(15)
         node14 = bst.insert(14)
         assert_equal(bst.find_second_largest(), node15)
+        
+        root = Node(10)
+        bst = Solution(root)
+        node20 = bst.insert(20)
+        node15 = bst.insert(15)
+        node14 = bst.insert(14)
+        node13 = bst.insert(13)
+        node21 = bst.insert(21)
+        node23 = bst.insert(23)
+        assert_equal(bst.find_second_largest(), node21)
+        
         print('Success: test_bst_second_largest')
 
 

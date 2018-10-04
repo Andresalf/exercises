@@ -29,9 +29,9 @@ class Solution(Bst):
 
     def find_second_largest(self):
         if not self.root:
-            raise TypeError
+            raise TypeError('root is None.')
         if not self.root.left and not self.root.right:
-            return self.root
+            raise ValueError('root must have at least one child node.')
 
         stack = [None, None]
         i = [0]
