@@ -1,9 +1,8 @@
 from nose.tools import assert_equal, assert_raises
-from exercises.second_largest import *
+from solutions.second_largest import *
 
 
 class TestBstSecondLargest(object):
-
     def test_bst_second_largest(self):
         bst = Solution(None)
         assert_raises(TypeError, bst.find_second_largest)
@@ -25,6 +24,14 @@ class TestBstSecondLargest(object):
         node3 = bst.insert(3)
         node7 = bst.insert(7)
         assert_equal(bst.find_second_largest(), node7)
+        root = Node(10)
+        bst = Solution(root)
+        node20 = bst.insert(20)
+        node5 = bst.insert(5)
+        node7 = bst.insert(7)
+        node15 = bst.insert(15)
+        node14 = bst.insert(14)
+        assert_equal(bst.find_second_largest(), node15)
         print('Success: test_bst_second_largest')
 
 
