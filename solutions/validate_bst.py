@@ -20,8 +20,6 @@ Invalid:
 '''
 class BstValidate(Bst):
 
-    CURRENT_INDEX = 2
-    
     def validate(self):
         if not self.root:
             raise TypeError
