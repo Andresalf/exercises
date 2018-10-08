@@ -40,9 +40,7 @@ class BstValidate(Bst):
             circular_buffer[buffer_index] = root.data
             buffer_index = 1 - buffer_index
             
-            right_is_good = self.validate_helper(root.right, circular_buffer, buffer_index)
-            
-            return right_is_good
+            return self.validate_helper(root.right, circular_buffer, buffer_index)
             
         return True
                     
