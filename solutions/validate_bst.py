@@ -1,5 +1,6 @@
 import sys
-from data_types.bst import Bst, Node
+from data_types.bst import Bst
+from data_types.node import Node
 
 '''
 Valid:
