@@ -25,13 +25,18 @@ class MinPriorityQueue(object):
         self.array.append(node)
         self.size += 1
         self.percolate_up(self.size)
-            
+
+    def min(self):
+        if not self.array:
+            return None
+        return self.array[0].obj
+        
     def percolate_up(self, child):
         parent = child // 2
         while parent > 0:
             if self.array[child].key < self.array[parent].key:
                 self.array[child], self.array[parent] = self.array[parent], self.array[child]
-            child = parent // 2
+            child = parent# // 2
             parent = child // 2
     
     def extract_min(self):
@@ -61,11 +66,8 @@ class MinPriorityQueue(object):
     def decrease_key(self, obj, new_key):
         for i, node in enumerate(self.array):
             if node and node.obj == obj:
-                previous = node.key
-                node.key = new_key
-                if new_key > previous :
-                    self.percolate_down(i)
-                elif new_key < previous:
+                if new_key < node.key:
+                    node.key = new_key
                     self.percolate_up(i)
                 break
                 

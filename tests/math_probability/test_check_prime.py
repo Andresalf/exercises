@@ -11,6 +11,7 @@ class TestMath(object):
         assert_equal(math.check_prime(0), False)
         assert_equal(math.check_prime(1), False)
         assert_equal(math.check_prime(2), True)
+        assert_equal(math.check_prime(3), True)
         assert_equal(math.check_prime(5), True)
         assert_equal(math.check_prime(7), True)
         assert_equal(math.check_prime(9), False)

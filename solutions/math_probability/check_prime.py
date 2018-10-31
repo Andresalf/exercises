@@ -7,7 +7,7 @@ class Math(object):
         if num is None or type(num) is not int:
             raise TypeError
         if num == 2 or num == 3:
-            return True
+           return True
         if num < 2 or num % 2 == 0:
             return False
             
