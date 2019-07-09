@@ -46,11 +46,11 @@ def compare(str1, str2):
     
     return True
 
-print are_one_edit_away('', '')
-print are_one_edit_away('', 'a')
-print are_one_edit_away('ab', 'ba')
-print are_one_edit_away('ab', 'ac')
-print are_one_edit_away('ab', 'abc')
-print are_one_edit_away('ab', 'acb')
-print are_one_edit_away('aaa', 'abb')
+print(are_one_edit_away('', ''))
+print(are_one_edit_away('ab', 'ba'))
+print(are_one_edit_away('ab', 'ac'))
+print(are_one_edit_away('', 'a'))
+print(are_one_edit_away('ab', 'abc'))
+print(are_one_edit_away('ab', 'acb'))
+print(are_one_edit_away('aaa', 'abb'))
     

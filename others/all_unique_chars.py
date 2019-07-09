@@ -22,6 +22,6 @@ def has_all_unique_chars_by_hash(array):
 
     return True
 
-arr = "linhgbi"
+arr = "linhgbo"
 #print(has_all_unique_chars_by_sort(arr))
 print(has_all_unique_chars_by_hash(arr))
